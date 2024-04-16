@@ -7,6 +7,7 @@ public class DoorButton : MonoBehaviour
     [SerializeField] private int id; // 0 is left, 1 is right
     [SerializeField] private Animator doorAnimator;
     [SerializeField] private float waitToToggleDuration = 0.5f;
+    [SerializeField] private Night night;
     private Animator buttonAnimator;
     private AudioSource audioSource;
     private bool isOpen = true;
@@ -28,6 +29,7 @@ public class DoorButton : MonoBehaviour
         if(!canHitButton) return;
         if(isOpen)
         {
+            night.PowerState++;
             isOpen = false;
             buttonAnimator.SetBool("isOpen", isOpen);
             doorAnimator.SetBool("isOpen", isOpen);
@@ -35,6 +37,7 @@ public class DoorButton : MonoBehaviour
         }
         else
         {
+            night.PowerState--;
             isOpen = true;
             buttonAnimator.SetBool("isOpen", isOpen);
             doorAnimator.SetBool("isOpen", isOpen);

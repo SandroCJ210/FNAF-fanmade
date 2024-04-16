@@ -9,13 +9,14 @@ public class SurveillanceSystem : MonoBehaviour
 {
     [SerializeField] private Camera officeCamera;
     [SerializeField] private SurveillanceCamera surveillanceCamera;
+    [SerializeField] private Night night;
     [SerializeField] private Canvas canvas;
-    [SerializeField] private Vector3 auxPosition;
-    [SerializeField] private float toggleDuration;
     [SerializeField] private AudioSource fanAS;
     [SerializeField] private GameObject[] uICamera;
     [SerializeField] private Room[] rooms;
     [SerializeField] private GameObject[] cameraSounds;
+    [SerializeField] private Vector3 auxPosition;
+    [SerializeField] private float toggleDuration;
     
 
     private Dictionary<string,Room> roomsDict;
@@ -41,6 +42,7 @@ public class SurveillanceSystem : MonoBehaviour
         if(!canToggle) return;
         if(isCameraUp)
         {
+            night.PowerState--;
             if(aux2 != null) Destroy(aux2);
             if(aux3 != null) Destroy(aux3);
             isCameraUp = false;
@@ -52,6 +54,7 @@ public class SurveillanceSystem : MonoBehaviour
         }
         else
         {
+            night.PowerState++;
             isCameraUp = true;
             transform.position = new Vector3(officeCamera.transform.position.x, officeCamera.transform.position.y, transform.position.z);
             fanAS.volume = 0.15f;
@@ -60,7 +63,6 @@ public class SurveillanceSystem : MonoBehaviour
             Destroy(aux2,10);
             Destroy(aux3,20);
             animator.Play("FlipUp");
-            
         }
         StartCoroutine(WaitToToogle(toggleDuration));
     }

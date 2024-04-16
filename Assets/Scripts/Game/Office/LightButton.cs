@@ -7,6 +7,7 @@ public class LightButton : MonoBehaviour
     [SerializeField] private int id; // 0 is left, 1 is right
     [SerializeField] private Animator officeAnimator;
     [SerializeField] private LightButton otherButton;
+    [SerializeField] private Night night;
     private AudioSource audioSource;
     private Animator buttonAnimator;
     private bool isOn;
@@ -30,12 +31,14 @@ public class LightButton : MonoBehaviour
             otherButton.buttonAnimator.SetBool("isOn", otherButton.isOn);
             otherButton.audioSource.Stop();
         }
+        else night.PowerState++;
     }
 
     private void ToogleLights()
     {
         if(isOn)
         {
+            night.PowerState--;
             isOn = false;
             buttonAnimator.SetBool("isOn", isOn);
             officeAnimator.SetBool("isOn", isOn);
@@ -56,21 +59,14 @@ public class LightButton : MonoBehaviour
 
     IEnumerator DoLightsAnimation(float duration)
     {
-        float time = 0;
         int randomNumber;
-        while (time < duration)
+        while (isOn)
         {
-            if(!isOn) break;
             randomNumber = Random.Range(0, 40);
             officeAnimator.SetFloat("randomNumber", randomNumber);
             if(randomNumber <4) audioSource.Pause();
             else audioSource.UnPause();
-            time += Time.deltaTime;
             yield return null;
         }
-        isOn = false;
-        buttonAnimator.SetBool("isOn", isOn);
-        officeAnimator.SetBool("isOn", otherButton.isOn);
-        audioSource.Stop();
     }
 }

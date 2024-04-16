@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &52049258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,8 +353,10 @@ MonoBehaviour:
   hourText: {fileID: 762408906}
   nightText: {fileID: 620374822}
   roomNameText: {fileID: 1018203882}
+  powerLeftText: {fileID: 75468416}
   night: {fileID: 783169326}
   kitchenText: {fileID: 1320695760}
+  usageAnimator: {fileID: 323999462}
   changeCameraAnimator: {fileID: 1359666529}
 --- !u!4 &167468343
 Transform:
@@ -863,6 +865,7 @@ GameObject:
   - component: {fileID: 323999459}
   - component: {fileID: 323999461}
   - component: {fileID: 323999460}
+  - component: {fileID: 323999462}
   m_Layer: 5
   m_Name: UsageImage
   m_TagString: Untagged
@@ -927,6 +930,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323999458}
   m_CullTransparentMesh: 1
+--- !u!95 &323999462
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323999458}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59b8fb276f98d6e1eaf2b9e5b7ded7ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &414807832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1685,7 @@ MonoBehaviour:
   id: 1
   doorAnimator: {fileID: 912638683}
   waitToToggleDuration: 0.5
+  night: {fileID: 783169326}
 --- !u!82 &576586146
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1931,7 +1956,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 48
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2430,7 +2455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863aa5c10e38f9a40bf54228acc88b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
+  movementSpeed: 4.5
   movementThreshold: 2.2
   startPoint: 2.25
   mouseThreshold: 5
@@ -2465,6 +2490,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hour: 0
   hourDuration: 86
+  power: 100
+  timeAdditionalDrain: 0
+  powerPenalty: 0.1
+  powerState: 1
 --- !u!4 &783169327
 Transform:
   m_ObjectHideFlags: 0
@@ -4381,6 +4410,7 @@ MonoBehaviour:
   id: 0
   doorAnimator: {fileID: 2018111500}
   waitToToggleDuration: 0.5
+  night: {fileID: 783169326}
 --- !u!82 &1366769537
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5739,6 +5769,7 @@ MonoBehaviour:
   id: 0
   officeAnimator: {fileID: 1908867432}
   otherButton: {fileID: 1690964146}
+  night: {fileID: 783169326}
 --- !u!82 &1663928069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5753,7 +5784,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6028,6 +6059,7 @@ MonoBehaviour:
   id: 1
   officeAnimator: {fileID: 1908867432}
   otherButton: {fileID: 1663928068}
+  night: {fileID: 783169326}
 --- !u!82 &1690964147
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6042,7 +6074,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6233,9 +6265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   officeCamera: {fileID: 778652039}
   surveillanceCamera: {fileID: 1373683583}
+  night: {fileID: 783169326}
   canvas: {fileID: 598271231}
-  auxPosition: {x: 0, y: 27, z: 0}
-  toggleDuration: 0.5
   fanAS: {fileID: 1069870696}
   uICamera:
   - {fileID: 1273755988}
@@ -6258,6 +6289,8 @@ MonoBehaviour:
   - {fileID: 8495606703120223925, guid: 9dec680005dc43d4ea24b43cbe6dff18, type: 3}
   - {fileID: 8476174577361320652, guid: fd5847ddb1f1c484bad1db6e19119294, type: 3}
   - {fileID: 2987118098058103607, guid: e694afafd78495e46bcf5779da430aad, type: 3}
+  auxPosition: {x: 0, y: 27, z: 0}
+  toggleDuration: 0.5
 --- !u!95 &1806724663
 Animator:
   serializedVersion: 5

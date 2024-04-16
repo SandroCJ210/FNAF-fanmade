@@ -96,6 +96,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void PowerOver()
+    {
+        
+    }
     public void Win()
     {
         Debug.Log("Ganaste.");

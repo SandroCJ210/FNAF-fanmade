@@ -9,8 +9,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text hourText;
     [SerializeField] private Text nightText;
     [SerializeField] private Text roomNameText;
+    [SerializeField] private Text powerLeftText;
     [SerializeField] private Night night;
     [SerializeField] private GameObject kitchenText;
+    [SerializeField] private Animator usageAnimator;
     [SerializeField] private Animator changeCameraAnimator;
 
     private void Start()
@@ -46,6 +48,16 @@ public class UIManager : MonoBehaviour
             kitchenText.SetActive(false);
         }
         roomNameText.text = roomName;
+    }
+
+    public void UpdateUsage(int powerState)
+    {
+        usageAnimator.SetFloat("powerState", powerState);
+    }
+
+    public void UpdatePowerLeft(float power)
+    {
+        powerLeftText.text = Mathf.Floor(power).ToString() + "%";
     }
 
     public void ChangeCameraAnimation()
