@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject kitchenText;
     [SerializeField] private Animator usageAnimator;
     [SerializeField] private Animator changeCameraAnimator;
+    [SerializeField] private GameObject uI;
 
     private void Start()
     {
@@ -63,5 +64,10 @@ public class UIManager : MonoBehaviour
     public void ChangeCameraAnimation()
     {
         changeCameraAnimator.Play("ChangeCamera");
+    }
+
+    public void HideUI()
+    {
+        uI.SetActive(false);
     }
 }

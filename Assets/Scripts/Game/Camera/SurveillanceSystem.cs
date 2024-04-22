@@ -46,6 +46,7 @@ public class SurveillanceSystem : MonoBehaviour
             if(aux2 != null) Destroy(aux2);
             if(aux3 != null) Destroy(aux3);
             isCameraUp = false;
+            GameManager.Instance.isCameraUp = false;
             transform.position = new Vector3(surveillanceCamera.transform.position.x, surveillanceCamera.transform.position.y, transform.position.z);
             fanAS.volume = 0.5f;
             aux1 = Instantiate(cameraSounds[0]);
@@ -56,6 +57,7 @@ public class SurveillanceSystem : MonoBehaviour
         {
             night.PowerState++;
             isCameraUp = true;
+            GameManager.Instance.isCameraUp = true;
             transform.position = new Vector3(officeCamera.transform.position.x, officeCamera.transform.position.y, transform.position.z);
             fanAS.volume = 0.15f;
             aux2 = Instantiate(cameraSounds[1], surveillanceCamera.transform.position, Quaternion.identity);

@@ -2,17 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bonnie : MonoBehaviour
+public class Bonnie : Animatronic
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private DoorButton doorButton;
+
+    private void Start() 
     {
-        
+        StartCoroutine(MovementOportunity());    
+        waypoints[currentRoom].BonnieInside = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override bool CheckDoorOpen()
     {
-        
+        return doorButton.IsOpen;
+    }
+
+    protected override void Move()
+    {
+        int randomNumber;
+        waypoints[currentRoom].BonnieInside = false;
+        switch(currentRoom)
+        {
+            case 2:
+                randomNumber = Random.Range(0,1);
+                currentRoom = randomNumber == 1? 1 : 3;
+                break;
+            case 4:
+                randomNumber = Random.Range(0,1);
+                currentRoom = randomNumber == 1? 3 : 6;
+                break;
+            case 5:
+                randomNumber = Random.Range(0,1);
+                currentRoom = randomNumber == 1? 4 : 6;
+                break;
+            case 6:
+                currentRoom = CheckDoorOpen()? 7 : 1;
+                break;
+            default:
+                randomNumber = Random.Range(0,2) + 1;
+                currentRoom += randomNumber;
+                break;
+        }
+        waypoints[currentRoom].BonnieInside = true;
     }
 }

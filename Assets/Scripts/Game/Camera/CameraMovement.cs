@@ -20,6 +20,7 @@ public class CameraMovement : MonoBehaviour
     private void UpdateCameraPosition()
     {
         if(!GetComponent<Camera>().enabled) return;
+        if(GameManager.Instance.gameOver) return;
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         float max = mouseThreshold - startPoint;                  // 5 - 2.5 = 2.5 => 100%

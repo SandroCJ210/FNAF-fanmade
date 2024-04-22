@@ -53,3 +53,6 @@ TagManager:
   - name: CameraFlipUp
     uniqueID: 3484892323
     locked: 0
+  - name: Jumpscare
+    uniqueID: 951191805
+    locked: 0

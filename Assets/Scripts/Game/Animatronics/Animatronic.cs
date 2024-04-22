@@ -4,17 +4,52 @@ using UnityEngine;
 
 public abstract class Animatronic : MonoBehaviour
 {
-    protected string animatronicName;
-    protected Room[] route;
-    protected int iALevel;
-    protected int randomNumber;
+    [SerializeField] private Night night;
+    [SerializeField] private float timeMovementOportunity;
+    [SerializeField] private int aILevel;
+    [SerializeField] private GameObject jumpscare;
+    [SerializeField] private GameObject mainCamera;
 
-    IEnumerator RNG(float duration)
+    [SerializeField] protected Room[] waypoints;
+    [SerializeField] protected int currentRoom;
+
+    public int AILevel
     {
-        while(!GameManager.Instance.gameOver)
+        get => aILevel;
+        set => aILevel = value;
+    }
+
+    protected abstract bool CheckDoorOpen();
+	protected abstract void Move();
+    
+    protected IEnumerator MovementOportunity()
+	{
+		int randomNumber;
+		while(night.Hour != 6)
+		{
+			yield return new WaitForSeconds(timeMovementOportunity);
+            Debug.Log(gameObject.name);
+			randomNumber = Random.Range(0,20) + 1;
+			if(aILevel > randomNumber) Move();	
+            if(currentRoom == 7)
+            {
+                StartCoroutine(WaitThenAttack());
+                break;
+            }		
+		}
+	}
+
+    private IEnumerator WaitThenAttack()
+    {
+        float time = 0;
+        while(time < 30)
         {
-            randomNumber = Random.Range(0,21);
-            yield return new WaitForSeconds(duration);
+            time+= Time.deltaTime;
+            if(GameManager.Instance.isCameraUp) yield return null;
+            else break;
         }
+        GameManager.Instance.gameOver = true;
+        UIManager.Instance.HideUI();
+        Instantiate(jumpscare,mainCamera.transform.position + new Vector3(0,0,10), Quaternion.identity);
     }
 }

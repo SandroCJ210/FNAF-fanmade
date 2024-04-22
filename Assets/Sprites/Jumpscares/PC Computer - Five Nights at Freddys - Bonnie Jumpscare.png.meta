@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 3c4b72a8fc868944dbb91af1f317aab1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7223.636
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2884c6122cbfb92f88eb6f766354f6b4
+      internalID: -518890234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6501.636
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c340808a39c6523bf68b7f7c2cfc6c
+      internalID: -2002111763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5779.636
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae060fe03136bea2a4154a979424222
+      internalID: -1019414294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5057.636
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25088dfe1498a2edae68f059b8fbf35
+      internalID: 726122616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4335.636
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9627eeeb3759484995d75bda70c5e75
+      internalID: -9983203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3613.6362
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7d1e08d78b3128bbe4d87e024a21e9
+      internalID: -1811497861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2891.6362
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84793c01d751c0f01ba79728a7df1498
+      internalID: -144237798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2169.6362
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc244358be80cfae7bb4913a3c8d5352
+      internalID: -2135286390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1447.6364
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284d0320f7f31880bab8ea16d54b6dae
+      internalID: 479866975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 725.63635
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149f6ce61294dbf6ea26d5a742546752
+      internalID: 451299086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Five Nights at Freddys - Bonnie Jumpscare_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.6363525
+        width: 1600
+        height: 722.36365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cb32c7ed60259f8854d8868d2754ff
+      internalID: 1837285372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_0: -518890234
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_1: -2002111763
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_10: 1837285372
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_2: -1019414294
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_3: 726122616
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_4: -9983203
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_5: -1811497861
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_6: -144237798
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_7: -2135286390
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_8: 479866975
+      PC Computer - Five Nights at Freddys - Bonnie Jumpscare_9: 451299086
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,6 +13,11 @@ public class DoorButton : MonoBehaviour
     private bool isOpen = true;
     private bool canHitButton = true;
     
+    public bool IsOpen
+    {
+        get => isOpen;
+        private set => isOpen = value;
+    }
 
     private void Start() 
     {
@@ -27,10 +32,10 @@ public class DoorButton : MonoBehaviour
     private void ToogleDoor()
     {
         if(!canHitButton) return;
-        if(isOpen)
+        if(IsOpen)
         {
             night.PowerState++;
-            isOpen = false;
+            IsOpen = false;
             buttonAnimator.SetBool("isOpen", isOpen);
             doorAnimator.SetBool("isOpen", isOpen);
             audioSource.Play();
@@ -38,7 +43,7 @@ public class DoorButton : MonoBehaviour
         else
         {
             night.PowerState--;
-            isOpen = true;
+            IsOpen = true;
             buttonAnimator.SetBool("isOpen", isOpen);
             doorAnimator.SetBool("isOpen", isOpen);
             audioSource.Play();

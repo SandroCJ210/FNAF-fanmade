@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
     public int night = 1;
     public bool isStarting;
+    public bool isCameraUp;
     public bool gameOver;
     
     [SerializeField]private GameObject nightObj;
