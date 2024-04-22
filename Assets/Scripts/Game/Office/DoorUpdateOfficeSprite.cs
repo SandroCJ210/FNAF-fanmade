@@ -14,8 +14,7 @@ public class DoorUpdateOfficeSprite : MonoBehaviour
 
     private void LateUpdate() 
     {
-        Debug.Log("kk");
-        officeAnimator.SetBool("bonnieInside", room.BonnieInside);
-        officeAnimator.SetBool("chicaInside", room.ChicaInside);
+        if(room.roomName == "Left Door") officeAnimator.SetBool("bonnieInside", room.BonnieInside);
+        else  officeAnimator.SetBool("chicaInside", room.ChicaInside);
     }
 }
