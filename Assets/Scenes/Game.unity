@@ -878,68 +878,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &569895704 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4102979710581477066, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
-  m_PrefabInstance: {fileID: 8244190001780709132}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &569895707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569895704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camId: 
-  bonnieInside: 0
-  chicaInside: 0
-  freddyInside: 0
-  roomName: Office
---- !u!95 &569895709 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 867731531922915979, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
-  m_PrefabInstance: {fileID: 8244190001780709132}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &586064017 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2729600238607063643, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
-  m_PrefabInstance: {fileID: 8244190001780709132}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &586064021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586064017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camId: 
-  bonnieInside: 0
-  chicaInside: 0
-  freddyInside: 0
-  roomName: Left Door
---- !u!114 &586064025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586064017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54ef43465d77ce1081ef97e193c7626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  officeAnimator: {fileID: 569895709}
 --- !u!223 &598271231 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 7172764404020231111, guid: b4a26bb0e01165eaead192b3618a93c2, type: 3}
@@ -1432,41 +1370,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &929068773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9124160929654080956, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
-  m_PrefabInstance: {fileID: 8244190001780709132}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &929068777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929068773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camId: 
-  bonnieInside: 0
-  chicaInside: 0
-  freddyInside: 0
-  roomName: Right Door
---- !u!114 &929068781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929068773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54ef43465d77ce1081ef97e193c7626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  officeAnimator: {fileID: 569895709}
 --- !u!4 &976605423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2759378512784888052, guid: c30daf46cb24711b2abf045c4db48847, type: 3}
@@ -1628,6 +1531,41 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 851664767787677023, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
   m_PrefabInstance: {fileID: 8244190001780709132}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1123756023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2729600238607063643, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
+  m_PrefabInstance: {fileID: 8244190001780709132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1123756027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123756023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54ef43465d77ce1081ef97e193c7626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  officeAnimator: {fileID: 1202605345}
+--- !u!114 &1123756028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123756023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camId: 
+  bonnieInside: 0
+  chicaInside: 0
+  freddyInside: 0
+  roomName: Left Door
 --- !u!1 &1175463124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1611,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1202605343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4102979710581477066, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
+  m_PrefabInstance: {fileID: 8244190001780709132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1202605345 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 867731531922915979, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
+  m_PrefabInstance: {fileID: 8244190001780709132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202605350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202605343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camId: 
+  bonnieInside: 0
+  chicaInside: 0
+  freddyInside: 0
+  roomName: Office
 --- !u!1 &1231968390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +1944,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ee8b9257f11734094341bce7748c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1623011509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9124160929654080956, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
+  m_PrefabInstance: {fileID: 8244190001780709132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1623011513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623011509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54ef43465d77ce1081ef97e193c7626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  officeAnimator: {fileID: 1202605345}
+--- !u!114 &1623011514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623011509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cffa3f31099fe6439664481d87fe699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camId: 
+  bonnieInside: 0
+  chicaInside: 0
+  freddyInside: 0
+  roomName: Right Door
 --- !u!1 &1687433478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,11 +2829,11 @@ PrefabInstance:
     - target: {fileID: 7935794298718057488, guid: 8d0e238c87c940afc902b01aa26e0654, type: 3}
       propertyPath: waypoints.Array.data[6]
       value: 
-      objectReference: {fileID: 586064021}
+      objectReference: {fileID: 1123756028}
     - target: {fileID: 7935794298718057488, guid: 8d0e238c87c940afc902b01aa26e0654, type: 3}
       propertyPath: waypoints.Array.data[7]
       value: 
-      objectReference: {fileID: 569895707}
+      objectReference: {fileID: 1202605350}
     - target: {fileID: 9179679496836255653, guid: 8d0e238c87c940afc902b01aa26e0654, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3176,19 +3176,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4102979710581477066, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 569895707}
+      addedObject: {fileID: 1202605350}
     - targetCorrespondingSourceObject: {fileID: 2729600238607063643, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 586064021}
+      addedObject: {fileID: 1123756028}
     - targetCorrespondingSourceObject: {fileID: 2729600238607063643, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 586064025}
+      addedObject: {fileID: 1123756027}
     - targetCorrespondingSourceObject: {fileID: 9124160929654080956, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 929068777}
+      addedObject: {fileID: 1623011514}
     - targetCorrespondingSourceObject: {fileID: 9124160929654080956, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 929068781}
+      addedObject: {fileID: 1623011513}
   m_SourcePrefab: {fileID: 100100000, guid: feb8e006937f5f58791dcfb9fc9fed84, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

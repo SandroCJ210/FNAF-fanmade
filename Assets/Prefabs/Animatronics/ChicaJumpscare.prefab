@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3087638824729491898}
   - component: {fileID: 8296790280088648231}
   - component: {fileID: 5573645294965070245}
+  - component: {fileID: 6978365365744576969}
   m_Layer: 0
   m_Name: ChicaJumpscare
   m_TagString: Untagged
@@ -203,3 +204,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6978365365744576969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952611372076368557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af704f8af4c755757bd073c0765783c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineAnimation: {fileID: 7601064882900863647, guid: f287cd75c780644fe89897364ff868fa, type: 3}
+  staticAnimation: {fileID: 8424662238843582700, guid: 387bd93b5d7b553ed8d047ee66535765, type: 3}
