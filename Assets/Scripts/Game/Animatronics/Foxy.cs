@@ -11,6 +11,6 @@ public class Foxy : Animatronic
 
     protected override void Move()
     {
-
+        
     }
 }

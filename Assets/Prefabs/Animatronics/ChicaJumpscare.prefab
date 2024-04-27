@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8296790280088648231}
   - component: {fileID: 5573645294965070245}
   - component: {fileID: 6978365365744576969}
+  - component: {fileID: -329019599227165014}
   m_Layer: 0
   m_Name: ChicaJumpscare
   m_TagString: Untagged
@@ -192,7 +193,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 951191805
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 81e23f3ad63e8a741993936e2dcf829d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -218,3 +219,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineAnimation: {fileID: 7601064882900863647, guid: f287cd75c780644fe89897364ff868fa, type: 3}
   staticAnimation: {fileID: 8424662238843582700, guid: 387bd93b5d7b553ed8d047ee66535765, type: 3}
+--- !u!114 &-329019599227165014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952611372076368557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f61e7e4110cc5c47bfe47fc1de249ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

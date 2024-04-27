@@ -5,8 +5,10 @@ using UnityEngine;
 public class Chica : Animatronic
 {
     [SerializeField] private DoorButton doorButton;
+    private AudioSource audioSource;
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(MovementOportunity());
         waypoints[currentRoom].ChicaInside = true;  
     }
@@ -22,8 +24,23 @@ public class Chica : Animatronic
         waypoints[currentRoom].ChicaInside = false;
         switch (currentRoom)
         {
-            case 1:
+            case 0:
                 currentRoom++;
+                break;
+            case 3:
+                randomNumber = Random.Range(0, 2);
+                currentRoom = randomNumber == 1? 2 : 4;
+                break;
+            case 4:
+                randomNumber = Random.Range(0, 3);
+                currentRoom = randomNumber < 1? 1 : 5;
+                break;
+            case 5:
+                randomNumber = Random.Range(0, 3);
+                currentRoom = randomNumber < 1? 4 : 6;
+                break;
+            case 6:
+                currentRoom = CheckDoorOpen()? 7 : 4;
                 break;
             default:
                 randomNumber = Random.Range(0,2) + 1;
@@ -31,6 +48,7 @@ public class Chica : Animatronic
                 break;
                 
         }
+        audioSource.Play();
         waypoints[currentRoom].ChicaInside = true;
     }
 }

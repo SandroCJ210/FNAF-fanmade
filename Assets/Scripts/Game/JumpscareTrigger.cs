@@ -18,6 +18,7 @@ public class JumpscareTrigger : MonoBehaviour
     {
         audioSource.Stop();
         Instantiate(staticAnimation, Camera.main.transform.position + new Vector3(0,0,10), Quaternion.identity);
-        Instantiate(lineAnimation, Camera.main.transform.position + new Vector3(0,0,10), Quaternion.identity);
+        GameObject obj1 = Instantiate(lineAnimation, Camera.main.transform.position + new Vector3(0,0,10), Quaternion.identity);
+        Destroy(obj1,3);
     }
 }

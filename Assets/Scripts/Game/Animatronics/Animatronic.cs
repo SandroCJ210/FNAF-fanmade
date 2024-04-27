@@ -50,6 +50,8 @@ public abstract class Animatronic : MonoBehaviour
         }
         GameManager.Instance.gameOver = true;
         UIManager.Instance.HideUI();
-        Instantiate(jumpscare,mainCamera.transform.position + new Vector3(0,0,10), Quaternion.identity);
+        AudioListener.pause = true;
+        GameObject js = Instantiate(jumpscare,mainCamera.transform.position + new Vector3(0,0,10), Quaternion.identity);
+        Destroy(js, 5);
     }
 }

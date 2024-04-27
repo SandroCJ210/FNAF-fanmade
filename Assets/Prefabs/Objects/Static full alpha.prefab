@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7464745479097508401}
   - component: {fileID: 7676978738712785655}
   - component: {fileID: -5986953096303863721}
+  - component: {fileID: -49226962798934467}
+  - component: {fileID: -4051724392346576758}
   m_Layer: 0
   m_Name: Static full alpha
   m_TagString: Background
@@ -117,7 +119,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b6528a19a73f99a4abdd2fa31d040670, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 24c06ea4aff529a41959accd2d3489e0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -203,3 +205,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-49226962798934467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424662238843582700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef173b1e9b526a41b7d00d1c3b0556f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackScreen: {fileID: 4991315151472767302, guid: ed78998836274744eb2ccad72cdad538, type: 3}
+--- !u!114 &-4051724392346576758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424662238843582700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f61e7e4110cc5c47bfe47fc1de249ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

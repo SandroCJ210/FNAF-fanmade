@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject lineAnimation;
+    [SerializeField] private GameObject blackScreen;
 
     public static GameManager Instance {get; private set;}
     public int night = 1;
@@ -56,8 +57,9 @@ public class GameManager : MonoBehaviour
     public void StartNight()
     {
         AudioListener.pause = true;
-        GameObject obj = Instantiate(lineAnimation, transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(lineAnimation, Camera.main.transform.position + new Vector3(0,0,10), Quaternion.identity);
         Destroy(obj,3f);
+        Instantiate(blackScreen, Camera.main.transform.position + new Vector3(0,0,10), Quaternion.identity);
         nightImage.sprite = GetNightImage.Instance.GetNightIm("N" + night);
         nightObj.SetActive(true);
         StartCoroutine(WaitThenLoad(4));
@@ -66,7 +68,6 @@ public class GameManager : MonoBehaviour
     IEnumerator WaitThenLoad(float wait)
     {
         yield return new WaitForSeconds(wait);
-
         float time = 0;
         Color startValue = nightImage.color;
         Color targetValue = startValue;
@@ -104,6 +105,7 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         Debug.Log("Ganaste.");
+        night++;
+        StartNight();
     }
-    
 }

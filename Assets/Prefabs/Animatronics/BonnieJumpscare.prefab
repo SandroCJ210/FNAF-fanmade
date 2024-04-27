@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6127148117578664606}
   - component: {fileID: -6494599415600603804}
   - component: {fileID: 5753416904894311124}
+  - component: {fileID: -4800972881719593585}
   m_Layer: 0
   m_Name: BonnieJumpscare
   m_TagString: Untagged
@@ -218,3 +219,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineAnimation: {fileID: 7601064882900863647, guid: f287cd75c780644fe89897364ff868fa, type: 3}
   staticAnimation: {fileID: 8424662238843582700, guid: 387bd93b5d7b553ed8d047ee66535765, type: 3}
+--- !u!114 &-4800972881719593585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877521900922208823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f61e7e4110cc5c47bfe47fc1de249ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

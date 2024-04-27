@@ -5,9 +5,10 @@ using UnityEngine;
 public class Bonnie : Animatronic
 {
     [SerializeField] private DoorButton doorButton;
-
+    private AudioSource audioSource;
     private void Start() 
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(MovementOportunity());    
         waypoints[currentRoom].BonnieInside = true;
     }
@@ -24,16 +25,16 @@ public class Bonnie : Animatronic
         switch(currentRoom)
         {
             case 2:
-                randomNumber = Random.Range(0,1);
-                currentRoom = randomNumber == 1? 1 : 3;
+                randomNumber = Random.Range(0,3);
+                currentRoom = randomNumber < 1? 1 : 3;
                 break;
             case 4:
-                randomNumber = Random.Range(0,1);
-                currentRoom = randomNumber == 1? 3 : 6;
+                randomNumber = Random.Range(0,3);
+                currentRoom = randomNumber < 1? 3 : 6;
                 break;
             case 5:
-                randomNumber = Random.Range(0,1);
-                currentRoom = randomNumber == 1? 4 : 6;
+                randomNumber = Random.Range(0,3);
+                currentRoom = randomNumber < 1? 4 : 6;
                 break;
             case 6:
                 currentRoom = CheckDoorOpen()? 7 : 1;
@@ -43,6 +44,7 @@ public class Bonnie : Animatronic
                 currentRoom += randomNumber;
                 break;
         }
+        audioSource.Play();
         waypoints[currentRoom].BonnieInside = true;
     }
 }
