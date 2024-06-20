@@ -6,10 +6,11 @@ public class Room : MonoBehaviour
 {
     [SerializeField] private string camId;
     [SerializeField] private bool bonnieInside;
-    [SerializeField] private bool chicaInside;
+    [SerializeField] protected bool chicaInside;
     [SerializeField] private bool freddyInside;
     
     private Animator animator;
+    private AudioSource audioSource;
     public string roomName;
     
     public string CamId
@@ -29,7 +30,7 @@ public class Room : MonoBehaviour
         }
     }
     
-    public bool ChicaInside
+    public virtual bool ChicaInside
     {
         get => chicaInside;
         set
@@ -37,6 +38,8 @@ public class Room : MonoBehaviour
             chicaInside = value;
             animator.SetBool("chicaInside", value);
             if(roomName != "Office") animator.SetFloat("randomNumber", Random.Range(0,2));
+            if(roomName == "Kitchen" && chicaInside == true) audioSource.Play();
+            else if(roomName == "Kitchen" && chicaInside == false) audioSource.Stop();
         }
     }
 
@@ -50,9 +53,10 @@ public class Room : MonoBehaviour
         }
     }
 
-    private void Start() 
+    private void Awake() 
     {
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        if(roomName == "Kitchen") audioSource = GetComponent<AudioSource>();
     }
 
     private void LateUpdate()

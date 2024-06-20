@@ -17,6 +17,7 @@ public class SurveillanceSystem : MonoBehaviour
     [SerializeField] private GameObject[] cameraSounds;
     [SerializeField] private Vector3 auxPosition;
     [SerializeField] private float toggleDuration;
+    [SerializeField] private GameObject kitchenText;
     
 
     private Dictionary<string,Room> roomsDict;
@@ -87,6 +88,7 @@ public class SurveillanceSystem : MonoBehaviour
         {
             uIItem.SetActive(true);
         }
+        if(currentRoom.roomName == "Kitchen") kitchenText.SetActive(true);
         UpdateCameraCanvas(surveillanceCamera.camera);
     }
 
@@ -99,6 +101,7 @@ public class SurveillanceSystem : MonoBehaviour
         {
             uIItem.SetActive(false);
         }
+        kitchenText.SetActive(false);
         UpdateCameraCanvas(officeCamera);
     }
 
