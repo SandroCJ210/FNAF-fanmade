@@ -54,6 +54,12 @@ public class Room : MonoBehaviour
     {
         animator = GetComponent<Animator>();    
     }
+
+    private void LateUpdate()
+    {
+        bool animatronicInside = bonnieInside || chicaInside || freddyInside;
+        animator.SetBool("animatronicInside",animatronicInside);
+    }
     
     
 }

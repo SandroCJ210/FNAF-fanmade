@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineAnimation: {fileID: 2437781409890388663, guid: bc24810bcf6620d45bd5ce3a899f5890, type: 3}
   blackScreen: {fileID: 4991315151472767302, guid: ed78998836274744eb2ccad72cdad538, type: 3}
-  night: 2
+  night: 5
   isStarting: 0
   isCameraUp: 0
   gameOver: 0

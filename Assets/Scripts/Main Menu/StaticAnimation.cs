@@ -29,9 +29,12 @@ public class StaticAnimation : MonoBehaviour
         {
             timeBetweenSwitch = Random.Range(0.25f, 0.75f);
             randomNumber = Random.Range(0,2);
+
             yield return new WaitForSeconds(timeBetweenSwitch);
+
             if(randomNumber == 0) auxColor.a = Random.Range(0.25f, 0.3f);
             else if(randomNumber == 1) auxColor.a = Random.Range(0.1f,0.15f);
+            
             spriteRenderer.color = auxColor;
         }
     }
